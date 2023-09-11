@@ -1,0 +1,60 @@
+/* CSS to style the hoverable side navigation buttons */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidenav {
+    width: 60px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+    overflow: hidden;
+}
+
+.sidenav-btn {
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.sidenav-btn.btn-1 {
+    background-color: #FF5733; /* Button 1 color */
+}
+
+.sidenav-btn.btn-2 {
+    background-color: #33FF57; /* Button 2 color */
+}
+
+.sidenav-btn.btn-3 {
+    background-color: #5733FF; /* Button 3 color */
+}
+
+.sidenav-btn.btn-4 {
+    background-color: #FFFF33; /* Button 4 color */
+}
+
+.sidenav-btn:hover {
+    background-color: #555;
+}
+
+/* Expand the side navigation on hover */
+.container:hover .sidenav {
+    width: 150px;
+}
+
+/* Create a gap between buttons */
+.sidenav-btn + .sidenav-btn {
+    margin-top: 10px;
+}

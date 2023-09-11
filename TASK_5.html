@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <style>
+        /* CSS to style the form */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        select {
+            width: 300px;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        #declaration {
+            margin-top: 10px;
+        }
+
+        #register-button {
+            background-color: #0077b5;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #login-link {
+            color: #00a6eb;
+            text-decoration: none;
+            margin-top: 20px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <label for="firstname">FIRST NAME:</label>
+        <input type="text" id="firstname" name="firstname" required><br>
+
+        <label for="lastname">LAST NAME:</label>
+        <input type="text" id="lastname" name="lastname"><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">PASSWORD:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <label for="repassword">RE-ENTER PASSWORD:</label>
+        <input type="password" id="repassword" name="repassword" required><br>
+
+        <label for="gender">GENDER:</label>
+        <input type="radio" id="male" name="gender" value="male">MALE
+        <input type="radio" id="female" name="gender" value="female">FEMALE<br>
+
+        <label for="age">AGE:</label>
+        <input type="text" id="age" name="age"><br>
+
+        <label for="phone">PHONE NUMBER:</label>
+        <input type="text" id="phone" name="phone"><br>
+
+        <label for="address">ADDRESS:</label>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="state">STATE:</label>
+        <input type="text" id="state" name="state"><br>
+
+        <label for="country">COUNTRY:</label>
+        <input type="text" id="country" name="country"><br>
+
+        <label for="languages">LANGUAGES KNOWN:</label>
+        <input type="checkbox" id="english" name="languages" value="english">ENGLISH
+        <input type="checkbox" id="kannada" name="languages" value="kannada">KANNADA
+        <input type="checkbox" id="hindi" name="languages" value="hindi">HINDI
+        <input type="checkbox" id="telugu" name="languages" value="telugu">TELUGU<br>
+
+        <input type="checkbox" id="declaration" name="declaration" required>
+        <label for="declaration">I hereby declare all given details are true</label><br>
+
+        <hr>
+
+        <input type="submit" id="register-button" value="Register">
+    </form>
+
+    <a href="https://honkaiimpact3.hoyoverse.com/global/en-us/fab" id="login-link">Login to honkaiimpact3rd.com</a>
+</body>
+
+</html>

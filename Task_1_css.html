@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: separate;
+            border-spacing: 5px;
+        }
+
+        table tr, td, th {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        /* Define different classes for different shapes */
+        .shape-1 {
+            border-radius: 0px;
+        }
+
+        .shape-2 {
+            border-radius: 5px;
+        }
+
+        .shape-3 {
+            border-radius: 10px;
+        }
+
+        .shape-4 {
+            border-radius: 15px;
+        }
+
+        caption {
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Remove background color for "Task-1" text */
+        caption h1 {
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <table bordercolor="white" bgcolor="lightgreen" height="200" padding="0" width="70%">
+        <caption>
+            <h1>CSS-Task-1 (Different Shapes)</h1><br>
+        </caption>
+        <tr>
+            <th class="shape-1">Firstname</th>
+            <th class="shape-2">Lastname</th>
+            <th class="shape-3">Age</th>
+        </tr>
+
+        <tr>
+            <td class="shape-4">Jill</td>
+            <td class="shape-1">Smith</td>
+            <td class="shape-2">50</td>
+        </tr>
+
+        <tr>
+            <td class="shape-3">Eve</td>
+            <td class="shape-4">Jackson</td>
+            <td class="shape-1">94</td>
+        </tr>
+
+        <tr>
+            <td class="shape-2">John</td>
+            <td class="shape-3">Doe</td>
+            <td class="shape-4">80</td>
+        </tr>
+    </table>
+</body>
+</html>

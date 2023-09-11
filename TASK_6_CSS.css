@@ -1,0 +1,95 @@
+/* CSS to style the login page */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('Imaginaytree-background.jpg'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #493d3d;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-image: url('Hiro.jpg'); /* Add the path to your image */
+    background-size: cover;
+    background-position: center;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #0077b5;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button[type="submit"],
+#cancel-button {
+    background-color: #0077b5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover,
+#cancel-button:hover {
+    background-color: #005580;
+}
+
+.extra-options {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0077b5;
+    margin-right: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}

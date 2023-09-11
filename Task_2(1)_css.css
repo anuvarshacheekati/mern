@@ -1,0 +1,28 @@
+/* CSS to style the horizontal navigation bar with horizontal scroll */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
+}
+
+.navbar {
+    background-color: #333;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px;
+}
+
+.nav-content {
+    display: inline-block; /* Display links in a row */
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px; /* Add space between links */
+}
+
+a:hover {
+    background-color: #555;
+}

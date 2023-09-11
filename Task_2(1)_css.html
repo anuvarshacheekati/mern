@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Navigation Bar</title>
+    <style>
+       
+        body, ul {
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: white;
+            overflow: hidden;
+            display: flex; /* Display the list items horizontally */
+            justify-content: center; /* Center the items horizontally */
+            align-items: center; /* Center the items vertically */
+            height: 100vh; /* Make the navbar take up the full viewport height */
+        }
+        .navbar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .navbar li {
+            padding: 10px;
+            background-color: skyblue;
+        }
+
+        .navbar li:first-child {
+            background-color: orange;
+        }
+
+        .navbar li:hover {
+            background-color: #555;
+        }
+
+        
+        .navbar a {
+            text-decoration: none;
+            color: white; 
+            display: block;
+        }
+
+        .navbar li:not(:first-child) a {
+            color: blue; 
+        }
+
+        address {
+            margin-top: 1em;
+            padding-top: 1em;
+        }
+
+        address span {
+            border-top: thin solid black; 
+            display: inline; 
+            padding-top: 0.3em; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">Bootstrap</a></li>
+        </ul>
+    </div>
+    <address>
+        <span>Your Address Goes Here</span>
+    </address>
+</body>
+</html>
+
+
